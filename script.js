@@ -31,7 +31,26 @@ class Teacher extends Person {
 		console.log(`${this._name}is teaching.`);
 	}
 }
+const person = new Person("Alice", 30);
 
+// Get name and age
+console.log(`Name: ${person.name}, Age: ${person.age}`);
+
+// Set age
+person.age = 35;
+console.log(`Updated Age: ${person.age}`);
+
+// Try to set a negative age
+person.age = -5;  // This will log "Age cannot be negative."
+
+// Create a Student
+const student = new Student("Bob", 20);
+
+// Create a Teacher
+const teacher = new Teacher("Mr. Smith", 45);
+
+student.study();  // This will log "Bob is studying."
+teacher.teach();  // This will log "Mr. Smith is teaching."
 // Do not change the code below this line
 window.Person = Person;
 window.Student = Student;
