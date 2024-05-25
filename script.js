@@ -19,7 +19,7 @@ class student extends Person{
 }
 class Teacher extends Person {
 	teach(){
-		`(${this.age}is teaching)`
+		console.log(`${this.age}is teaching`);
 	}
 }
 
